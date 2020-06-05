@@ -1,9 +1,0 @@
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\bin\Debug\project.exe.config
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\bin\Debug\project.exe
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\bin\Debug\project.pdb
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\Stoploss Calculator.csprojResolveAssemblyReference.cache
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\project.MainForm.resources
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\project.Properties.Resources.resources
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\Stoploss Calculator.csproj.GenerateResource.Cache
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\project.exe
-C:\Users\cjohnson.000\Source\Repos\cjohnsonDBH\StockStoplossCalculator\project\obj\Debug\project.pdb
