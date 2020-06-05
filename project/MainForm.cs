@@ -38,6 +38,7 @@ namespace project
         }
 
         #region Form | Drag & Drop -->
+        // Provides functionality to move the form around the screen
         private void MainForm_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
@@ -89,6 +90,7 @@ namespace project
 
         private void txtAccountSize_TextChanged(object sender, EventArgs e)
         {
+            // If all characters are deleted from this, suppress the error
             if (txtAccountSize.Text == "")
             {
                 return;
@@ -108,6 +110,45 @@ namespace project
                 {
                     MessageBox.Show(ex.ToString());
                 }
+            }
+        }
+
+        private void txtPriceShare_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (txtAccountSize.Text == "")
+                {
+                    MessageBox.Show("Enter the Account Size Value");
+                }
+                else
+                {
+                    double val1 = double.Parse(txtShares.Text);
+                    double val2 = double.Parse(txtPriceShare.Text);
+                    double val3 = Math.Round(val1 * val2, 2);
+                    txtTotalTrade.Text = val3.ToString();
+
+
+                    double val5 = double.Parse(txtPercentAccount.Text);
+                    double val9 = Math.Round(val3 - val5, 2);
+                    double val10 = Math.Round(val9 / val1, 2);
+                    txt1pSL.Text = val10.ToString();
+
+                    double val15 = double.Parse(txtTotalTrade.Text);
+                    double val11 = Math.Round(val15 * 0.15, 2);
+                    double val13 = Math.Round(val11 / val1, 2);
+                    double val12 = Math.Round(val13 + val2, 2);
+                    txt15Profit.Text = val12.ToString();
+
+                    double val14 = Math.Round(val15 * 0.2, 2);
+                    double val16 = Math.Round(val14 / val1, 2);
+                    double val19 = Math.Round(val16 + val2, 2);
+                    txt20Profit.Text = val19.ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -183,41 +224,7 @@ namespace project
             }
         }
 
-        private void txtPriceShare_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                if (txtAccountSize.Text == "")
-                {
-                    MessageBox.Show("Enter the Account Size Value");
-                }
-                else
-                {
-                    double val1 = double.Parse(txtShares.Text);
-                    double val2 = double.Parse(txtPriceShare.Text);
-                    double val3 = Math.Round(val1 * val2, 2);
-                    txtTotalTrade.Text = val3.ToString();
-
-
-                    double val5 = double.Parse(txtPercentAccount.Text);
-                    double val9 = Math.Round(val3 - val5, 2);
-                    double val10 = Math.Round(val9 / val1, 2);
-                    txt1pSL.Text = val10.ToString();
-
-                    double val15 = double.Parse(txtTotalTrade.Text);
-                    double val11 = Math.Round(val15 * 0.15, 2);
-                    double val13 = Math.Round(val11 / val1, 2);
-                    double val12 = Math.Round(val13 + val2, 2);
-                    txt15Profit.Text = val12.ToString();
-
-                    double val14 = Math.Round(val15 * 0.2, 2);
-                    double val16 = Math.Round(val14 / val1, 2);
-                    double val19 = Math.Round(val16 + val2, 2);
-                    txt20Profit.Text = val19.ToString();
-                }
-            }
-            catch { }
-        }
+        
     }
 }
 
