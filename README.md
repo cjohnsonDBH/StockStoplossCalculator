@@ -5,3 +5,7 @@ Simple utility designed to calculate 1% stoploss given portfolio size and total 
  - Double-click will hide the text box areas.
 
 ![enter image description here](https://i.imgur.com/crr0AoQ.png)
+
+------------
+
+**Implements DarkUI from RobinPerris:**    [https://github.com/RobinPerris/DarkUI](https://github.com/RobinPerris/DarkUI "https://github.com/RobinPerris/DarkUI") 
